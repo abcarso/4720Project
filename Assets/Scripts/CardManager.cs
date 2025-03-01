@@ -10,6 +10,16 @@ public class CardManager : MonoBehaviour
     private Card currentCard; // Card displayed to the player
     public TMP_Text cardText; // Text on the card
     
+    public void Start()
+    {
+        foreach (var deck in allDecks)
+        {
+            foreach (var card in deck.cards)
+            {
+                card.encounterCount = 0;
+            }
+        }
+    }
     public void NextCard()
     {
         ShuffleDeck();
@@ -31,7 +41,7 @@ public class CardManager : MonoBehaviour
                     if (IsCardAvailable(card))
                     {
                         currentPool.Add(card);
-                        Debug.Log("Card Added");
+                        Debug.Log("Card Added from" + deck.deckID);
                     }
                 }
             }
@@ -43,6 +53,11 @@ public class CardManager : MonoBehaviour
     {
         // Check repeatable logic
         if (!card.isRepeatable && card.encounterCount > 0)
+        {
+            return false;
+        }
+        // Don't draw the same card twice in a row
+        if (card == currentCard)
         {
             return false;
         }
