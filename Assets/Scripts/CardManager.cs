@@ -8,7 +8,8 @@ public class CardManager : MonoBehaviour
     public List<CardDeck> allDecks; // Master list of all decks
     private List<Card> currentPool = new List<Card>(); // Cards in the active pool
     private Card currentCard; // Card displayed to the player
-    public TMP_Text cardText; // Text on the card
+    public GameObject Card; // Physical card object
+    //public TMP_Text cardText; // Text on the card
     
     public void Start()
     {
@@ -20,11 +21,22 @@ public class CardManager : MonoBehaviour
             }
         }
     }
+
+    public void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            NextCard();
+        }
+    }
+
     public void NextCard()
     {
         ShuffleDeck();
         currentCard = DrawCard();
-        cardText.text = currentCard.dialogText;
+        Debug.Log(currentCard.dialogText);
+        Instantiate(Card);
+        Card.GetComponent<TMP_Text>().text = currentCard.dialogText;
     }
 
     //Reconstitute the deck of available cards
