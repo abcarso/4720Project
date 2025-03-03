@@ -36,7 +36,7 @@ public class CardManager : MonoBehaviour
         currentCard = DrawCard();
         Debug.Log(currentCard.dialogText);
         Instantiate(Card);
-        Card.GetComponent<TextMeshProUGUI>().text = currentCard.dialogText;
+        Card.GetComponent<TMP_Text>().text = currentCard.dialogText;
     }
 
     //Reconstitute the deck of available cards
