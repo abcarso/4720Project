@@ -27,7 +27,6 @@ public class CardManager : MonoBehaviour
     {
         ShuffleDeck();
         currentCard = DrawCard();
-        Debug.Log(currentCard.dialogText);
         //Instantiate(Card);
         cardText.text = currentCard.dialogText;
         FindObjectOfType<ChoiceManager>().GenerateChoices(currentCard.options);
@@ -36,7 +35,6 @@ public class CardManager : MonoBehaviour
     //Reconstitute the deck of available cards
     public void ShuffleDeck()
     {
-        Debug.Log("Shuffling...");
         currentPool.Clear();
         foreach (var deck in allDecks)
         {
@@ -47,7 +45,6 @@ public class CardManager : MonoBehaviour
                     if (IsCardAvailable(card))
                     {
                         currentPool.Add(card);
-                        Debug.Log("Card Added from" + deck.deckID);
                     }
                 }
             }
@@ -93,7 +90,6 @@ public class CardManager : MonoBehaviour
             if (randomValue < card.weight)
             {
                 card.encounterCount++;
-                Debug.Log(card.cardID);
                 return card;
             }
             randomValue -= card.weight;

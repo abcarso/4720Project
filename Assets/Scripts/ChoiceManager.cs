@@ -6,7 +6,7 @@ using TMPro;
 public class ChoiceManager : MonoBehaviour
 {
     public GameObject choiceButtonPrefab; // Assign prefab in the Inspector
-    public Transform choiceContainer; // Assign the panel in the Inspector
+    public Transform choiceContainer; // Assign panel in the Inspector
 
     private List<GameObject> activeChoices = new List<GameObject>();
 
@@ -32,8 +32,6 @@ public class ChoiceManager : MonoBehaviour
         }
     }
 
-
-
     public void ClearChoices()
     {
         foreach (GameObject button in activeChoices)
@@ -45,12 +43,11 @@ public class ChoiceManager : MonoBehaviour
 
     private void OnChoiceSelected(DialogOption option)
     {
-        Debug.Log($"Player selected: {option.text}");
-        Debug.Log($"Effects: School={option.schoolEffect}, Sleep={option.sleepEffect}, Social={option.socialEffect}");
+        // Change stats
         FindObjectOfType<BalanceSystem>().AddSleep(option.sleepEffect);
         FindObjectOfType<BalanceSystem>().AddSocial(option.socialEffect);
         FindObjectOfType<BalanceSystem>().AddSchool(option.schoolEffect);
-        // Apply effects or handle selection logic here
-        ClearChoices(); // Remove choices after selection (optional)
+        // Get the next card
+        FindObjectOfType<CardManager>().NextCard();
     }
 }
