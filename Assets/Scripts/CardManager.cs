@@ -8,8 +8,8 @@ public class CardManager : MonoBehaviour
     public List<CardDeck> allDecks; // Master list of all decks
     private List<Card> currentPool = new List<Card>(); // Cards in the active pool
     private Card currentCard; // Card displayed to the player
-    public GameObject Card; // Physical card object
-    //public TMP_Text cardText; // Text on the card
+    //public GameObject Card; // Physical card object
+    public TMP_Text cardText; // Text on the card
     
     public void Start()
     {
@@ -20,29 +20,21 @@ public class CardManager : MonoBehaviour
                 card.encounterCount = 0;
             }
         }
-    }
-
-    public void Update()
-    {
-        if(Input.GetMouseButtonDown(0))
-        {
-            NextCard();
-        }
+        NextCard();
     }
 
     public void NextCard()
     {
         ShuffleDeck();
         currentCard = DrawCard();
-        Debug.Log(currentCard.dialogText);
-        Instantiate(Card);
-        Card.GetComponent<TMP_Text>().text = currentCard.dialogText;
+        //Instantiate(Card);
+        cardText.text = currentCard.dialogText;
+        FindObjectOfType<ChoiceManager>().GenerateChoices(currentCard.options);
     }
 
     //Reconstitute the deck of available cards
     public void ShuffleDeck()
     {
-        Debug.Log("Shuffling...");
         currentPool.Clear();
         foreach (var deck in allDecks)
         {
@@ -53,7 +45,6 @@ public class CardManager : MonoBehaviour
                     if (IsCardAvailable(card))
                     {
                         currentPool.Add(card);
-                        Debug.Log("Card Added from" + deck.deckID);
                     }
                 }
             }
@@ -99,7 +90,6 @@ public class CardManager : MonoBehaviour
             if (randomValue < card.weight)
             {
                 card.encounterCount++;
-                Debug.Log(card.cardID);
                 return card;
             }
             randomValue -= card.weight;

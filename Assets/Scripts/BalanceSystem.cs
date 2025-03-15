@@ -12,7 +12,6 @@ public class BalanceSystem : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Balance System Initialized: Sleep = " + sleep + ", Social = " + social + ", School = " + school);
         UpdateUI();
     }
 
@@ -34,12 +33,12 @@ public class BalanceSystem : MonoBehaviour
         }
     }
 
-    public void AddSleep(int value) { sleep += value; Debug.Log("Sleep: " + sleep); UpdateUI(); }
-    public void SubtractSleep(int value) { sleep -= value; Debug.Log("Sleep: " + sleep); UpdateUI(); }
+    public void AddSleep(int value) { sleep += value; UpdateUI(); }
+    public void SubtractSleep(int value) { sleep -= value; UpdateUI(); }
 
-    public void AddSocial(int value) { social += value; Debug.Log("Social: " + social); UpdateUI(); }
-    public void SubtractSocial(int value) { social -= value; Debug.Log("Social: " + social); UpdateUI(); }
+    public void AddSocial(int value) { social += value; UpdateUI(); }
+    public void SubtractSocial(int value) { social -= value; UpdateUI(); }
 
-    public void AddSchool(int value) { school += value; Debug.Log("School: " + school); UpdateUI(); }
-    public void SubtractSchool(int value) { school -= value; Debug.Log("School: " + school); UpdateUI(); }
+    public void AddSchool(int value) { school += value; UpdateUI(); }
+    public void SubtractSchool(int value) { school -= value; UpdateUI(); }
 }
