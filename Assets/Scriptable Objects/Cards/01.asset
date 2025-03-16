@@ -16,11 +16,23 @@ MonoBehaviour:
   image: {fileID: 0}
   dialogText: Welcome to School.
   options:
-  - text: Cool
+  - text: 
+    schoolEffect: 0
+    sleepEffect: 0
+    socialEffect: 0
+  - text: 
+    schoolEffect: 0
+    sleepEffect: 0
+    socialEffect: 0
+  - text: 
+    schoolEffect: 0
+    sleepEffect: 0
+    socialEffect: 0
+  - text: 
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
   cardID: 1
   weight: 1
   isRepeatable: 0
-  encounterCount: 1
+  encounterCount: 0
