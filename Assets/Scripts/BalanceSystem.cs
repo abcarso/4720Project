@@ -8,7 +8,10 @@ public class BalanceSystem : MonoBehaviour
     public int social = 5;
     public int school = 5;
 
-    public TMP_Text balanceText; 
+    public TMP_Text balanceText;
+    public ProgressBar SchoolBar;
+    public ProgressBar SleepBar;
+    public ProgressBar SocialBar;
 
     void Start()
     {
@@ -27,10 +30,13 @@ public class BalanceSystem : MonoBehaviour
 
     void UpdateUI()
     {
-        if (balanceText != null)
+        /*if (balanceText != null)
         {
             balanceText.text = $"Sleep: {sleep}\nSocial: {social}\nSchool: {school}";
-        }
+        }*/
+        SchoolBar.BarValue = school;
+        SleepBar.BarValue = sleep;
+        SocialBar.BarValue = social;
     }
 
     public void AddSleep(int value) { sleep += value; UpdateUI(); }
