@@ -8,11 +8,13 @@ public class BalanceSystem : MonoBehaviour
     public int social = 5;
     public int school = 5;
 
-    public TMP_Text balanceText; 
+    public TMP_Text balanceText;
+    public ProgressBar SchoolBar;
+    public ProgressBar SleepBar;
+    public ProgressBar SocialBar;
 
     void Start()
     {
-        Debug.Log("Balance System Initialized: Sleep = " + sleep + ", Social = " + social + ", School = " + school);
         UpdateUI();
     }
 
@@ -28,18 +30,21 @@ public class BalanceSystem : MonoBehaviour
 
     void UpdateUI()
     {
-        if (balanceText != null)
+        /*if (balanceText != null)
         {
             balanceText.text = $"Sleep: {sleep}\nSocial: {social}\nSchool: {school}";
-        }
+        }*/
+        SchoolBar.BarValue = school;
+        SleepBar.BarValue = sleep;
+        SocialBar.BarValue = social;
     }
 
-    public void AddSleep(int value) { sleep += value; Debug.Log("Sleep: " + sleep); UpdateUI(); }
-    public void SubtractSleep(int value) { sleep -= value; Debug.Log("Sleep: " + sleep); UpdateUI(); }
+    public void AddSleep(int value) { sleep += value; UpdateUI(); }
+    public void SubtractSleep(int value) { sleep -= value; UpdateUI(); }
 
-    public void AddSocial(int value) { social += value; Debug.Log("Social: " + social); UpdateUI(); }
-    public void SubtractSocial(int value) { social -= value; Debug.Log("Social: " + social); UpdateUI(); }
+    public void AddSocial(int value) { social += value; UpdateUI(); }
+    public void SubtractSocial(int value) { social -= value; UpdateUI(); }
 
-    public void AddSchool(int value) { school += value; Debug.Log("School: " + school); UpdateUI(); }
-    public void SubtractSchool(int value) { school -= value; Debug.Log("School: " + school); UpdateUI(); }
+    public void AddSchool(int value) { school += value; UpdateUI(); }
+    public void SubtractSchool(int value) { school -= value; UpdateUI(); }
 }
