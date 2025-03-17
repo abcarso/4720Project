@@ -10,21 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
-  m_Name: 03
+  m_Name: S_Project
   m_EditorClassIdentifier: 
-  eventName: Study Session
+  eventName: Project Due
   image: {fileID: 0}
-  dialogText: Do you want to come study with us?
+  dialogText: Another project due today...
   options:
-  - text: Sounds fun
-    schoolEffect: 3
-    sleepEffect: -2
-    socialEffect: 3
-  - text: I study better without distractions
+  - text: It's just not worth it... I think I'll sleep in
+    schoolEffect: -30
+    sleepEffect: 20
+    socialEffect: 0
+  - text: Guess I'll just try my hardest
     schoolEffect: 5
-    sleepEffect: -1
-    socialEffect: -1
-  cardID: 3
-  weight: 2
+    sleepEffect: -10
+    socialEffect: 0
+  - text: Maybe my friend can help!
+    schoolEffect: 10
+    sleepEffect: -5
+    socialEffect: 5
+  cardID: 10
+  weight: 1
   isRepeatable: 1
   encounterCount: 0
