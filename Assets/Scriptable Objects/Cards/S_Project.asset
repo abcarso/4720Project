@@ -10,17 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
-  m_Name: 01
+  m_Name: S_Project
   m_EditorClassIdentifier: 
-  eventName: Opening
+  eventName: Project Due
   image: {fileID: 0}
-  dialogText: Welcome to School.
+  dialogText: Another project due today...
   options:
-  - text: Cool
-    schoolEffect: 0
-    sleepEffect: 0
+  - text: It's just not worth it... I think I'll sleep in
+    schoolEffect: -30
+    sleepEffect: 20
     socialEffect: 0
-  cardID: 1
+  - text: Guess I'll just try my hardest
+    schoolEffect: 5
+    sleepEffect: -10
+    socialEffect: 0
+  - text: Maybe my friend can help!
+    schoolEffect: 10
+    sleepEffect: -5
+    socialEffect: 5
+  cardID: 10
   weight: 1
-  isRepeatable: 0
-  encounterCount: 1
+  isRepeatable: 1
+  encounterCount: 0

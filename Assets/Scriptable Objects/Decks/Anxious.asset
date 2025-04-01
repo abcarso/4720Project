@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d5c5ba46f87d54582d634cb5ad3ff5, type: 3}
   m_Name: Anxious
   m_EditorClassIdentifier: 
-  deckID: 
-  cards: []
+  deckID: 3
+  cards:
+  - {fileID: 11400000, guid: 4ff09489cf2bf084eaf0e0ed77e55d14, type: 2}
+  - {fileID: 11400000, guid: 5fe1596aa26c79b479c51cbbc1a628c5, type: 2}
+  - {fileID: 11400000, guid: 3dfbb01027a0b374ca610d1182fb2627, type: 2}
   isActive: 0

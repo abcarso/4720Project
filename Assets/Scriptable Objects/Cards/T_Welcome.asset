@@ -10,21 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
-  m_Name: 03
+  m_Name: T_Welcome
   m_EditorClassIdentifier: 
-  eventName: Study Session
+  eventName: Opening
   image: {fileID: 0}
-  dialogText: Do you want to come study with us?
+  dialogText: Welcome to School.
   options:
-  - text: Sounds fun
-    schoolEffect: 3
-    sleepEffect: -2
-    socialEffect: 3
-  - text: I study better without distractions
-    schoolEffect: 5
-    sleepEffect: -1
-    socialEffect: -1
-  cardID: 3
-  weight: 2
-  isRepeatable: 1
+  - text: 
+    schoolEffect: 0
+    sleepEffect: 0
+    socialEffect: 0
+  - text: 
+    schoolEffect: 0
+    sleepEffect: 0
+    socialEffect: 0
+  - text: 
+    schoolEffect: 0
+    sleepEffect: 0
+    socialEffect: 0
+  - text: 
+    schoolEffect: 0
+    sleepEffect: 0
+    socialEffect: 0
+  cardID: 1
+  weight: 1
+  isRepeatable: 0
   encounterCount: 0

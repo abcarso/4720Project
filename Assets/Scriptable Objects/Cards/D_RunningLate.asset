@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
+  m_Name: D_RunningLate
+  m_EditorClassIdentifier: 
+  eventName: Running Late
+  image: {fileID: 0}
+  dialogText: Late for class again...
+  options:
+  - text: There's no point going if I'm late...
+    schoolEffect: -20
+    sleepEffect: 0
+    socialEffect: 0
+  - text: I'll go, but it will be embarassing going in late...
+    schoolEffect: -5
+    sleepEffect: 0
+    socialEffect: -20
+  cardID: 8
+  weight: 1
+  isRepeatable: 1
+  encounterCount: 0

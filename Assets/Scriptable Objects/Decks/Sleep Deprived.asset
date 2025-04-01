@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d5c5ba46f87d54582d634cb5ad3ff5, type: 3}
   m_Name: Sleep Deprived
   m_EditorClassIdentifier: 
-  deckID: 
-  cards: []
+  deckID: 5
+  cards:
+  - {fileID: 11400000, guid: c487a5aafc375f941a8dd405612a157e, type: 2}
+  - {fileID: 11400000, guid: 133e973083d4a9341833b8c7d7c69e4c, type: 2}
   isActive: 0

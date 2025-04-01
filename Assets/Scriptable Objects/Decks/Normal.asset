@@ -14,6 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deckID: 2
   cards:
+  - {fileID: 11400000, guid: 67fc08fd07fe27444a2b1c34d0e9cfb1, type: 2}
+  - {fileID: 11400000, guid: c75daa42fc5cd7f4fb410c69910e0ca5, type: 2}
+  - {fileID: 11400000, guid: 4bd6f9e51f3b7e74bb79c9046886732a, type: 2}
+  - {fileID: 11400000, guid: 3863614c7a832e241af93ad474d2f979, type: 2}
+  - {fileID: 11400000, guid: 508b71cf14908064c91c3d317614e1ed, type: 2}
+  - {fileID: 11400000, guid: 031aa5610162f0040956d8dc98b8b536, type: 2}
+  - {fileID: 11400000, guid: 862743066177d5641a40547df67e19b8, type: 2}
   - {fileID: 11400000, guid: 549cf2d53b8e77e40a8020b2334ce8bb, type: 2}
+  - {fileID: 11400000, guid: 1e1af3c45d0d51a42a9491947da156cc, type: 2}
+  - {fileID: 11400000, guid: 17f121957a309194d918bab3aeda41ac, type: 2}
+  - {fileID: 11400000, guid: 5e656f48cfb6f714d97c45e5ec228818, type: 2}
   - {fileID: 11400000, guid: d63447f760e06204fb591323a11288ed, type: 2}
   isActive: 1
