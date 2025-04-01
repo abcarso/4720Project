@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
+  m_Name: N_CrushStudy
+  m_EditorClassIdentifier: 
+  eventName: Crush Study Invite
+  image: {fileID: 0}
+  dialogText: Want to study together?
+  options:
+  - text: YES! um.. I mean yeah sure. whatever...
+    schoolEffect: 5
+    sleepEffect: -5
+    socialEffect: -5
+  - text: Hm. I hope they actually want to study.
+    schoolEffect: 15
+    sleepEffect: -5
+    socialEffect: -15
+  - text: I thought you'd never ask. *Wink*
+    schoolEffect: 0
+    sleepEffect: -10
+    socialEffect: 10
+  cardID: 17
+  weight: 1
+  isRepeatable: 0
+  encounterCount: 0

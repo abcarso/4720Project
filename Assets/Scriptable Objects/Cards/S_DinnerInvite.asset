@@ -10,29 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
-  m_Name: 02
+  m_Name: S_DinnerInvite
   m_EditorClassIdentifier: 
-  eventName: Orientation
+  eventName: Dinner Invite
   image: {fileID: 0}
-  dialogText: Do you want to go to orientation?
+  dialogText: Hey man! Wanna come get dinner with us?
   options:
-  - text: Yeah!
-    schoolEffect: -1
-    sleepEffect: -2
-    socialEffect: 5
-  - text: ... no...
+  - text: Oh, for sure!
     schoolEffect: 0
-    sleepEffect: 0
-    socialEffect: -5
-  - text: I think I'll take a nap
-    schoolEffect: -2
-    sleepEffect: 5
-    socialEffect: -3
-  - text: I've got to study
-    schoolEffect: 4
-    sleepEffect: 0
-    socialEffect: -2
-  cardID: 2
+    sleepEffect: -10
+    socialEffect: 10
+  - text: Why is this big sheep talking to me? (hallucinate)
+    schoolEffect: 0
+    sleepEffect: 10
+    socialEffect: -15
+  cardID: 16
   weight: 1
-  isRepeatable: 1
+  isRepeatable: 0
   encounterCount: 0
