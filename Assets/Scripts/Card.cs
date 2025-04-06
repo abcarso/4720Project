@@ -31,4 +31,5 @@ public class DialogOption
     public int schoolEffect; // +/- to school
     public int sleepEffect; // +/- to sleep
     public int socialEffect; // +/- to social
+    public Card nextCard;
 }

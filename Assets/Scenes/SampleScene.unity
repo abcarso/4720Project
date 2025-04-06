@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224020355541654544, guid: 5eefba205a58c8c4a937c97b87c185a3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.79999924
+      value: -0.80000305
       objectReference: {fileID: 0}
     - target: {fileID: 224763426186284840, guid: 5eefba205a58c8c4a937c97b87c185a3, type: 3}
       propertyPath: m_Pivot.x
@@ -886,6 +886,61 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &924067724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 924067726}
+  - component: {fileID: 924067725}
+  m_Layer: 0
+  m_Name: DeckManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &924067725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924067724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 386fb108d0795474dbafb47ea75358af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialDeck: {fileID: 11400000, guid: fd4d1af7fd00537499fb885c765b0bcd, type: 2}
+  normalDeck: {fileID: 11400000, guid: 3db3a7fee467edf4fa656efa7932fadc, type: 2}
+  sleepDeprivedDeck: {fileID: 11400000, guid: fbdbcff1a7f12f344a022402f1b0a68a, type: 2}
+  depressedDeck: {fileID: 11400000, guid: 2cded323378c38d4b81f54e4f4ac3f09, type: 2}
+  anxiousDeck: {fileID: 11400000, guid: e36ea37ebf8893640a57e3eca6efb9e5, type: 2}
+  finalTutorialCard: {fileID: 11400000, guid: 7f33915a15f3c1a4f99a9bae0f1aa491, type: 2}
+  sleepThreshold: 20
+  socialThreshold: 20
+  anxiousThreshold: 20
+  balanceSystem: {fileID: 1605947590}
+  cardManager: {fileID: 2146189210}
+--- !u!4 &924067726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924067724}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 336.97534, y: 159.89162, z: -2.5607827}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &980727462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,7 +1250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224020355541654544, guid: 5eefba205a58c8c4a937c97b87c185a3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.79999924
+      value: -0.80000305
       objectReference: {fileID: 0}
     - target: {fileID: 224763426186284840, guid: 5eefba205a58c8c4a937c97b87c185a3, type: 3}
       propertyPath: m_Pivot.x
@@ -1564,9 +1619,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e66192365f36e4184626effa34ba81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sleep: 5
-  social: 5
-  school: 5
+  sleep: 50
+  social: 50
+  school: 50
   balanceText: {fileID: 0}
   SchoolBar: {fileID: 1143191164}
   SleepBar: {fileID: 1054475965}
@@ -1797,7 +1852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224020355541654544, guid: 5eefba205a58c8c4a937c97b87c185a3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.79999924
+      value: -0.80000305
       objectReference: {fileID: 0}
     - target: {fileID: 224763426186284840, guid: 5eefba205a58c8c4a937c97b87c185a3, type: 3}
       propertyPath: m_Pivot.x
@@ -2123,6 +2178,9 @@ MonoBehaviour:
   allDecks:
   - {fileID: 11400000, guid: fd4d1af7fd00537499fb885c765b0bcd, type: 2}
   - {fileID: 11400000, guid: 3db3a7fee467edf4fa656efa7932fadc, type: 2}
+  - {fileID: 11400000, guid: e36ea37ebf8893640a57e3eca6efb9e5, type: 2}
+  - {fileID: 11400000, guid: 2cded323378c38d4b81f54e4f4ac3f09, type: 2}
+  - {fileID: 11400000, guid: fbdbcff1a7f12f344a022402f1b0a68a, type: 2}
   cardText: {fileID: 1294702764}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -2135,3 +2193,4 @@ SceneRoots:
   - {fileID: 2146189209}
   - {fileID: 1605947589}
   - {fileID: 823960121}
+  - {fileID: 924067726}

@@ -4,9 +4,9 @@ using TMPro; // For TextMeshPro support
 
 public class BalanceSystem : MonoBehaviour
 {
-    public int sleep = 5;
-    public int social = 5;
-    public int school = 5;
+    public int sleep;
+    public int social;
+    public int school;
 
     public TMP_Text balanceText;
     public ProgressBar SchoolBar;

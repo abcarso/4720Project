@@ -97,4 +97,14 @@ public class CardManager : MonoBehaviour
         Debug.LogWarning("Oops.");
         return null; // Fallback
     }
+
+    public void ShowCard(Card card)
+    {
+        currentCard = card;
+        currentCard.encounterCount++;
+        
+        cardText.text = currentCard.dialogText;
+
+        FindObjectOfType<ChoiceManager>().GenerateChoices(currentCard.options);
+    }
 }
