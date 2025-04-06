@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEditor;
 
 
 public class GameManager : MonoBehaviour
 {
     public GameObject GameplayCanvas;
+    public GameObject StartCanvas;
     public GameObject LoseCanvas;
     public TextMeshProUGUI LoseText;
     public BalanceSystem StatsManager;
@@ -16,7 +18,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameplayCanvas.SetActive(true);
+        StartCanvas.SetActive(true);
+        GameplayCanvas.SetActive(false);
         LoseCanvas.SetActive(false);
     }
 
@@ -47,5 +50,17 @@ public class GameManager : MonoBehaviour
             LoseCanvas.SetActive(true);
             GameplayCanvas.SetActive(false);
         }
+    }
+
+    public void StartButton()
+    {
+        GameplayCanvas.SetActive(true);
+        StartCanvas.SetActive(false);
+    }
+
+    public void QuitButton()
+    {
+        GameplayCanvas.SetActive(true);
+        EditorApplication.ExitPlaymode();
     }
 }
