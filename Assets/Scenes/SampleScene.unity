@@ -718,8 +718,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 40
     m_Right: 40
-    m_Top: 100
-    m_Bottom: 100
+    m_Top: 80
+    m_Bottom: 80
   m_ChildAlignment: 4
   m_Spacing: 84.09
   m_ChildForceExpandWidth: 1
@@ -1306,7 +1306,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 49.15
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1592,7 +1592,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 49.15
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2809,7 +2809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2841,7 +2841,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!224 &1864585106
 RectTransform:
@@ -3332,9 +3332,9 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 1864585106}
   - {fileID: 2001527775}
   - {fileID: 884765172}
-  - {fileID: 1864585106}
   - {fileID: 1953242114}
   - {fileID: 2146189209}
   - {fileID: 1605947589}

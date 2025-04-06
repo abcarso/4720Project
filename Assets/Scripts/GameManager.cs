@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         StartCanvas.SetActive(true);
-        GameplayCanvas.SetActive(false);
+        GameplayCanvas.SetActive(true);
         LoseCanvas.SetActive(false);
     }
 

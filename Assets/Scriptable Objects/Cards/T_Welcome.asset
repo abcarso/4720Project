@@ -20,18 +20,22 @@ MonoBehaviour:
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
+    nextCard: {fileID: 0}
   - text: 
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
+    nextCard: {fileID: 0}
   - text: 
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
+    nextCard: {fileID: 0}
   - text: 
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
+    nextCard: {fileID: 0}
   cardID: 1
   weight: 1
   isRepeatable: 0
