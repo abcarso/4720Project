@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &114000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
+  m_Name: N_SkippedBreakfast
+  m_EditorClassIdentifier:
+  eventName: Skipped Breakfast
+  image: {fileID: 0}
+  dialogText: You rushed out and forgot to eat. How do you cope?
+  options:
+  - text: Power through. Who needs food?
+    schoolEffect: -5
+    sleepEffect: -5
+    socialEffect: 0
+  - text: Grab a snack at break time.
+    schoolEffect: 0
+    sleepEffect: 5
+    socialEffect: 5
+  - text: Complain about it all morning.
+    schoolEffect: -5
+    sleepEffect: 0
+    socialEffect: -5
+  cardID: 21
+  weight: 1
+  isRepeatable: 0
+  encounterCount: 0
