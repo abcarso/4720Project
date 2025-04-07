@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deckID: 1
   cards:
-  - {fileID: 11400000, guid: 7f33915a15f3c1a4f99a9bae0f1aa491, type: 2}
+  - {fileID: 11400000, guid: fd94403aead21ab4bb4b88d84efd7daf, type: 2}
   isActive: 1

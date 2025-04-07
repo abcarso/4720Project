@@ -10,23 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
-  m_Name: T_Welcome
+  m_Name: T_TheWisdom
   m_EditorClassIdentifier: 
-  eventName: Opening
+  eventName: 
   image: {fileID: 0}
-  dialogText: Alright. We're here. Good luck at college!
+  dialogText: Betwen good grades, sleep, and a social life, you will only have enough
+    time to do two, at the cost of the third.
   options:
-  - text: Let's do this!
+  - text: Oh yeah. Makes sense.
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
-    nextCard: {fileID: 0}
-  - text: Whelp. There go the prime years of my life...
+    nextCard: {fileID: 11400000, guid: 6d5934e4d8ee4484fbdbe52268ca1bb9, type: 2}
+  - text: I see. How wise...
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
-    nextCard: {fileID: 0}
-  cardID: 1
-  weight: 1
+    nextCard: {fileID: 11400000, guid: 6d5934e4d8ee4484fbdbe52268ca1bb9, type: 2}
+  cardID: 
+  weight: 0
   isRepeatable: 0
   encounterCount: 0
