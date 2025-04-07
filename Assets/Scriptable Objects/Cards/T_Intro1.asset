@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
-  m_Name: T_Welcome
+  m_Name: T_Intro1
   m_EditorClassIdentifier: 
-  eventName: Opening
+  eventName: 
   image: {fileID: 0}
-  dialogText: Alright. We're here. Good luck at college!
+  dialogText: I can't believe you're going to College today.
   options:
-  - text: Let's do this!
+  - text: I am so excited!
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
-    nextCard: {fileID: 0}
-  - text: Whelp. There go the prime years of my life...
+    nextCard: {fileID: 11400000, guid: f7f9932494f72d241902f664114ea6a9, type: 2}
+  - text: Uh... I am?
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
-    nextCard: {fileID: 0}
-  cardID: 1
+    nextCard: {fileID: 11400000, guid: f7f9932494f72d241902f664114ea6a9, type: 2}
+  cardID: 
   weight: 1
   isRepeatable: 0
   encounterCount: 0
