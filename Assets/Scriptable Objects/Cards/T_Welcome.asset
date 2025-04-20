@@ -13,25 +13,19 @@ MonoBehaviour:
   m_Name: T_Welcome
   m_EditorClassIdentifier: 
   eventName: Opening
-  image: {fileID: 0}
-  dialogText: Welcome to School.
+  image: {fileID: 21300000, guid: 7c62962134aed4e4b85c8fd54b81f3a1, type: 3}
+  dialogText: Alright. We're here. Good luck at college!
   options:
-  - text: 
+  - text: Let's do this!
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
-  - text: 
+    nextCard: {fileID: 0}
+  - text: Goodbye to the prime years of my life...
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 0
-  - text: 
-    schoolEffect: 0
-    sleepEffect: 0
-    socialEffect: 0
-  - text: 
-    schoolEffect: 0
-    sleepEffect: 0
-    socialEffect: 0
+    nextCard: {fileID: 0}
   cardID: 1
   weight: 1
   isRepeatable: 0

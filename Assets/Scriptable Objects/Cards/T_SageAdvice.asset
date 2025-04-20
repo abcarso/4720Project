@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
+  m_Name: T_SageAdvice
+  m_EditorClassIdentifier: 
+  eventName: 
+  image: {fileID: 21300000, guid: 7c62962134aed4e4b85c8fd54b81f3a1, type: 3}
+  dialogText: Well that's good. You'll have to spend your time wisely. Better start
+    now. You ever heard about picking two of the three between sleep, school, and
+    social life?
+  options:
+  - text: Yes
+    schoolEffect: 0
+    sleepEffect: 0
+    socialEffect: 0
+    nextCard: {fileID: 11400000, guid: 6d5934e4d8ee4484fbdbe52268ca1bb9, type: 2}
+  - text: No
+    schoolEffect: 0
+    sleepEffect: 0
+    socialEffect: 0
+    nextCard: {fileID: 11400000, guid: 5bd912167f4d1404fa682de329d386e4, type: 2}
+  cardID: 27
+  weight: 0
+  isRepeatable: 0
+  encounterCount: 0

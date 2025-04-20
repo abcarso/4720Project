@@ -13,18 +13,20 @@ MonoBehaviour:
   m_Name: N_PartyInvite
   m_EditorClassIdentifier: 
   eventName: Party Invite
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 22396fe15688941c4a5a38b45aaab5d9, type: 3}
   dialogText: Hey bro! Party at my place tonight!
   options:
   - text: Hi! Do I uh.. Know you?
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: -5
+    nextCard: {fileID: 0}
   - text: Yeah, bro!
     schoolEffect: -5
     sleepEffect: -15
     socialEffect: 10
+    nextCard: {fileID: 0}
   cardID: 5
   weight: 1
   isRepeatable: 0
-  encounterCount: 0
+  encounterCount: 1

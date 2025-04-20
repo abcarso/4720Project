@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
+--- !u!114 &114000001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,29 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
-  m_Name: N_Orientation
+  m_Name: N_SkippedBreakfast
   m_EditorClassIdentifier: 
-  eventName: Orientation
+  eventName: Skipped Breakfast
   image: {fileID: 0}
-  dialogText: Do you want to go to orientation?
+  dialogText: I forgot to eat breakfast!
   options:
-  - text: Yeah!
-    schoolEffect: -1
-    sleepEffect: -2
-    socialEffect: 5
-  - text: ... no...
+  - text: Power through. Who needs food?
+    schoolEffect: -5
+    sleepEffect: -5
+    socialEffect: 0
+    nextCard: {fileID: 0}
+  - text: Grab a snack at break time.
     schoolEffect: 0
+    sleepEffect: 5
+    socialEffect: 5
+    nextCard: {fileID: 0}
+  - text: Complain about it all morning.
+    schoolEffect: -5
     sleepEffect: 0
     socialEffect: -5
-  - text: I think I'll take a nap
-    schoolEffect: -2
-    sleepEffect: 5
-    socialEffect: -3
-  - text: I've got to study
-    schoolEffect: 4
-    sleepEffect: 0
-    socialEffect: -2
-  cardID: 2
-  weight: 1
+    nextCard: {fileID: 0}
+  cardID: 23
+  weight: 2
   isRepeatable: 1
   encounterCount: 0

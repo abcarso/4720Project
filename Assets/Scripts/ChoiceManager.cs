@@ -47,7 +47,17 @@ public class ChoiceManager : MonoBehaviour
         FindObjectOfType<BalanceSystem>().AddSleep(option.sleepEffect);
         FindObjectOfType<BalanceSystem>().AddSocial(option.socialEffect);
         FindObjectOfType<BalanceSystem>().AddSchool(option.schoolEffect);
-        // Get the next card
-        FindObjectOfType<CardManager>().NextCard();
+        
+        // Check if there is a next card
+        if (option.nextCard != null)
+        {
+            // Get the next card in line
+            FindObjectOfType<CardManager>().ShowCard(option.nextCard);
+        }
+        else
+        {
+            // Get the next card from the deck
+            FindObjectOfType<CardManager>().NextCard();
+        }
     }
 }

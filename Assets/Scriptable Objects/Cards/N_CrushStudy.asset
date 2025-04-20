@@ -13,22 +13,25 @@ MonoBehaviour:
   m_Name: N_CrushStudy
   m_EditorClassIdentifier: 
   eventName: Crush Study Invite
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 4a0b473570d1e49fabd302a94bc39771, type: 3}
   dialogText: Want to study together?
   options:
   - text: YES! um.. I mean yeah sure. whatever...
     schoolEffect: 5
     sleepEffect: -5
     socialEffect: -5
+    nextCard: {fileID: 0}
   - text: Hm. I hope they actually want to study.
     schoolEffect: 15
     sleepEffect: -5
     socialEffect: -15
+    nextCard: {fileID: 0}
   - text: I thought you'd never ask. *Wink*
     schoolEffect: 0
     sleepEffect: -10
     socialEffect: 10
+    nextCard: {fileID: 0}
   cardID: 17
-  weight: 1
+  weight: 2
   isRepeatable: 0
   encounterCount: 0

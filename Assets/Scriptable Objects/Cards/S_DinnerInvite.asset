@@ -13,18 +13,20 @@ MonoBehaviour:
   m_Name: S_DinnerInvite
   m_EditorClassIdentifier: 
   eventName: Dinner Invite
-  image: {fileID: 0}
-  dialogText: Hey man! Wanna come get dinner with us?
+  image: {fileID: 21300000, guid: 8bc8c544fb44e46ad868874e0bf9a20c, type: 3}
+  dialogText: Hey! Wanna come get dinner with us?
   options:
   - text: Oh, for sure!
     schoolEffect: 0
     sleepEffect: -10
     socialEffect: 10
+    nextCard: {fileID: 0}
   - text: Why is this big sheep talking to me? (hallucinate)
     schoolEffect: 0
-    sleepEffect: 10
-    socialEffect: -15
+    sleepEffect: 20
+    socialEffect: -30
+    nextCard: {fileID: 0}
   cardID: 16
   weight: 1
-  isRepeatable: 0
-  encounterCount: 0
+  isRepeatable: 1
+  encounterCount: 1
