@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: T_TheWisdom
   m_EditorClassIdentifier: 
   eventName: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 7c62962134aed4e4b85c8fd54b81f3a1, type: 3}
   dialogText: Betwen good grades, sleep, and a social life, you will only have enough
     time to do two, at the cost of the third.
   options:
@@ -27,7 +27,7 @@ MonoBehaviour:
     sleepEffect: 0
     socialEffect: 0
     nextCard: {fileID: 11400000, guid: 6d5934e4d8ee4484fbdbe52268ca1bb9, type: 2}
-  cardID: 
+  cardID: 28
   weight: 0
   isRepeatable: 0
   encounterCount: 0

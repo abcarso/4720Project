@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class CardManager : MonoBehaviour
@@ -10,6 +11,7 @@ public class CardManager : MonoBehaviour
     private Card currentCard; // Card displayed to the player
     //public GameObject Card; // Physical card object
     public TMP_Text cardText; // Text on the card
+    public GameObject currentCharacter; // Image on the card
     public int cardsDrawn = 0;
     public TextMeshProUGUI dayText;
 
@@ -32,7 +34,20 @@ public class CardManager : MonoBehaviour
         UpdateDays();
         currentCard = DrawCard();
         //Instantiate(Card);
+
+        // Display card text
         cardText.text = currentCard.dialogText;
+        // Display card character if it exists
+        if (currentCard.image != null)
+        {
+            currentCharacter.GetComponent<Image>().sprite = currentCard.image;
+            currentCharacter.GetComponent<Image>().enabled = true;
+        }
+        else
+        {
+            currentCharacter.GetComponent<Image>().enabled = false;
+        }
+
         FindObjectOfType<ChoiceManager>().GenerateChoices(currentCard.options);
     }
 
@@ -101,14 +116,15 @@ public class CardManager : MonoBehaviour
         Debug.LogWarning("Oops.");
         return null; // Fallback
     }
-
+    
     public void ShowCard(Card card)
     {
         currentCard = card;
         currentCard.encounterCount++;
-        
+
         cardText.text = currentCard.dialogText;
 
+        Image img = currentCharacter.GetComponent<Image>();
         FindObjectOfType<ChoiceManager>().GenerateChoices(currentCard.options);
     }
 

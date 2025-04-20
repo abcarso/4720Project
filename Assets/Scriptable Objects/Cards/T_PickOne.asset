@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: T_PickOne
   m_EditorClassIdentifier: 
   eventName: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 7c62962134aed4e4b85c8fd54b81f3a1, type: 3}
   dialogText: If you had to pick one to abandon, which would it be?
   options:
   - text: Good grades
@@ -36,7 +36,7 @@ MonoBehaviour:
     sleepEffect: -10
     socialEffect: -10
     nextCard: {fileID: 11400000, guid: 7f33915a15f3c1a4f99a9bae0f1aa491, type: 2}
-  cardID: 
+  cardID: 29
   weight: 0
   isRepeatable: 0
   encounterCount: 0

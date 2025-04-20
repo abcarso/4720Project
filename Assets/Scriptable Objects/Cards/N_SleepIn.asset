@@ -17,14 +17,16 @@ MonoBehaviour:
   dialogText: Stay here.. it's so cozy...
   options:
   - text: Must... Resist!
-    schoolEffect: 0
+    schoolEffect: 10
     sleepEffect: -10
     socialEffect: 0
+    nextCard: {fileID: 0}
   - text: Mmmmm... zzzzz
     schoolEffect: -10
     sleepEffect: 20
-    socialEffect: -10
+    socialEffect: 0
+    nextCard: {fileID: 0}
   cardID: 4
-  weight: 1
+  weight: 3
   isRepeatable: 1
   encounterCount: 0

@@ -11,24 +11,27 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
   m_Name: N_UnexpectedCompliment
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   eventName: Compliment Surprise
-  image: {fileID: 0}
-  dialogText: Someone complimented your outfit today!
+  image: {fileID: 21300000, guid: 4a0b473570d1e49fabd302a94bc39771, type: 3}
+  dialogText: Woah! Cool outfit!
   options:
-  - text: Smile and say thanks!
+  - text: Thanks! *smile*
     schoolEffect: 0
     sleepEffect: 5
-    socialEffect: 15
-  - text: Shrug it off, you're not used to it.
+    socialEffect: 20
+    nextCard: {fileID: 0}
+  - text: Really? I wasn't trying.
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 5
-  - text: Get awkward and hide.
+    nextCard: {fileID: 0}
+  - text: '*Cringe and die inside*'
     schoolEffect: -5
     sleepEffect: 0
-    socialEffect: -10
-  cardID: 24
+    socialEffect: -20
+    nextCard: {fileID: 0}
+  cardID: 20
   weight: 1
   isRepeatable: 0
   encounterCount: 0
