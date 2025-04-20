@@ -11,24 +11,27 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
   m_Name: A_Overthinking
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   eventName: Overthinking Spiral
   image: {fileID: 0}
   dialogText: Thoughts are spiraling out of control. What do you do?
   options:
-  - text: I’ll write everything down to organize my mind.
+  - text: "I\u2019ll write everything down to organize my mind."
     schoolEffect: 10
     sleepEffect: -5
     socialEffect: -5
+    nextCard: {fileID: 0}
   - text: Overthink more. Maybe I missed something!
     schoolEffect: -10
     sleepEffect: -15
     socialEffect: -10
+    nextCard: {fileID: 0}
   - text: Take a break and go for a walk.
     schoolEffect: 0
     sleepEffect: 5
     socialEffect: 10
-  cardID: 20
-  weight: 1
-  isRepeatable: 0
+    nextCard: {fileID: 0}
+  cardID: 24
+  weight: 2
+  isRepeatable: 1
   encounterCount: 0

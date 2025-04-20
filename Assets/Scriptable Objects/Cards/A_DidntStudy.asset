@@ -20,11 +20,13 @@ MonoBehaviour:
     schoolEffect: 10
     sleepEffect: -5
     socialEffect: 0
+    nextCard: {fileID: 0}
   - text: Actually, I have an idea... (attempt to cheat)
     schoolEffect: 20
     sleepEffect: 5
     socialEffect: -50
+    nextCard: {fileID: 0}
   cardID: 13
-  weight: 1
-  isRepeatable: 0
+  weight: 2
+  isRepeatable: 1
   encounterCount: 0

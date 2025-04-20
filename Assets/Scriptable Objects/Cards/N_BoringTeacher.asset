@@ -20,15 +20,18 @@ MonoBehaviour:
     schoolEffect: -5
     sleepEffect: 10
     socialEffect: 0
+    nextCard: {fileID: 0}
   - text: Must. Focus.
     schoolEffect: 10
     sleepEffect: -10
     socialEffect: 0
+    nextCard: {fileID: 0}
   - text: Ask for a friend's notes later
     schoolEffect: 5
     sleepEffect: -5
     socialEffect: 5
+    nextCard: {fileID: 0}
   cardID: 19
-  weight: 1
+  weight: 2
   isRepeatable: 1
-  encounterCount: 0
+  encounterCount: 5

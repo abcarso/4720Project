@@ -20,11 +20,13 @@ MonoBehaviour:
     schoolEffect: -20
     sleepEffect: 0
     socialEffect: 0
+    nextCard: {fileID: 0}
   - text: I'll go, but it will be embarassing going in late...
     schoolEffect: -5
     sleepEffect: 0
     socialEffect: -20
+    nextCard: {fileID: 0}
   cardID: 8
-  weight: 1
+  weight: 3
   isRepeatable: 1
   encounterCount: 0
