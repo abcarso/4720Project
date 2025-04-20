@@ -11,8 +11,11 @@ public class GameManager : MonoBehaviour
     public GameObject StartCanvas;
     public GameObject PauseCanvas;
     public GameObject LoseCanvas;
+    public GameObject WinCanvas;
     public TextMeshProUGUI LoseText;
+    public TextMeshProUGUI WinText;
     public BalanceSystem StatsManager;
+    public CardManager aCardManager;
     private string LossCause;
     private int GameState; // 0 is playing, 1 is win, -1 is lost
     
@@ -23,6 +26,7 @@ public class GameManager : MonoBehaviour
         GameplayCanvas.SetActive(true);
         PauseCanvas.SetActive(false);
         LoseCanvas.SetActive(false);
+        WinCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -50,11 +54,22 @@ public class GameManager : MonoBehaviour
                 LossCause = "social";
                 GameState = -1;
             }
+            else if(StatsManager.school >= 100 && StatsManager.sleep >= 100 && StatsManager.social >= 100)
+            {
+                GameState = 1;
+            }
         }
         if(GameState == -1)
         {
             LoseText.GetComponent<TextMeshProUGUI>().text = "Your " + LossCause + " fell to 0";
             LoseCanvas.SetActive(true);
+            GameplayCanvas.SetActive(false);
+        }
+
+        if(GameState == 1 || aCardManager.cardsDrawn == 20)
+        {
+            WinText.GetComponent<TextMeshProUGUI>().text = "You won in " + aCardManager.cardsDrawn + " days!";
+            WinCanvas.SetActive(true);
             GameplayCanvas.SetActive(false);
         }
     }
