@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: N_PartnerPick
   m_EditorClassIdentifier: 
   eventName: Picking Partners
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 71ef81b8e9fba40c49b40e1b9c502e43, type: 3}
   dialogText: It's time to pick your partners for the group project.
   options:
   - text: I'll just do it myself.
@@ -34,4 +34,4 @@ MonoBehaviour:
   cardID: 12
   weight: 1
   isRepeatable: 0
-  encounterCount: 1
+  encounterCount: 0

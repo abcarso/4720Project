@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: N_BoringTeacher
   m_EditorClassIdentifier: 
   eventName: Boring Teacher
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 71ef81b8e9fba40c49b40e1b9c502e43, type: 3}
   dialogText: '*Inaudable drone*'
   options:
   - text: '*Doze off in class*'
@@ -34,4 +34,4 @@ MonoBehaviour:
   cardID: 19
   weight: 2
   isRepeatable: 1
-  encounterCount: 5
+  encounterCount: 0

@@ -710,12 +710,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
+    m_Left: 5
+    m_Right: 5
+    m_Top: 5
+    m_Bottom: 5
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -4951,6 +4951,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2cded323378c38d4b81f54e4f4ac3f09, type: 2}
   - {fileID: 11400000, guid: fbdbcff1a7f12f344a022402f1b0a68a, type: 2}
   cardText: {fileID: 1294702764}
+  currentCharacter: {fileID: 968828704}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

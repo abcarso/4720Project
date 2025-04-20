@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: N_CrushStudy
   m_EditorClassIdentifier: 
   eventName: Crush Study Invite
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 4a0b473570d1e49fabd302a94bc39771, type: 3}
   dialogText: Want to study together?
   options:
   - text: YES! um.. I mean yeah sure. whatever...

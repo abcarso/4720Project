@@ -34,4 +34,4 @@ MonoBehaviour:
   cardID: 10
   weight: 2
   isRepeatable: 1
-  encounterCount: 1
+  encounterCount: 0
