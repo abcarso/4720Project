@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI; // For UI Text
 using TMPro; // For TextMeshPro support
+using System.Collections.Generic;
 
 public class BalanceSystem : MonoBehaviour
 {
@@ -20,12 +21,12 @@ public class BalanceSystem : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S)) { AddSleep(1); }
-        if (Input.GetKeyDown(KeyCode.A)) { AddSocial(1); }
-        if (Input.GetKeyDown(KeyCode.D)) { AddSchool(1); }
-        if (Input.GetKeyDown(KeyCode.W)) { SubtractSleep(1); }
-        if (Input.GetKeyDown(KeyCode.Q)) { SubtractSocial(1); }
-        if (Input.GetKeyDown(KeyCode.E)) { SubtractSchool(1); }
+        if (Input.GetKeyDown(KeyCode.S)) { AddSleep(5); }
+        if (Input.GetKeyDown(KeyCode.A)) { AddSocial(5); }
+        if (Input.GetKeyDown(KeyCode.D)) { AddSchool(5); }
+        if (Input.GetKeyDown(KeyCode.W)) { SubtractSleep(5); }
+        if (Input.GetKeyDown(KeyCode.Q)) { SubtractSocial(5); }
+        if (Input.GetKeyDown(KeyCode.E)) { SubtractSchool(5); }
     }
 
     void UpdateUI()
@@ -47,4 +48,9 @@ public class BalanceSystem : MonoBehaviour
 
     public void AddSchool(int value) { school += value; UpdateUI(); }
     public void SubtractSchool(int value) { school -= value; UpdateUI(); }
+
+    public List<int> GetVals()
+    {
+        return new List<int> { school, sleep, social };
+    }
 }

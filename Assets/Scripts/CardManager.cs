@@ -12,7 +12,9 @@ public class CardManager : MonoBehaviour
     //public GameObject Card; // Physical card object
     public TMP_Text cardText; // Text on the card
     public GameObject currentCharacter; // Image on the card
-    
+    public int cardsDrawn = 0;
+    public TextMeshProUGUI dayText;
+
     public void Start()
     {
         foreach (var deck in allDecks)
@@ -28,6 +30,8 @@ public class CardManager : MonoBehaviour
     public void NextCard()
     {
         ShuffleDeck();
+        cardsDrawn += 1;
+        UpdateDays();
         currentCard = DrawCard();
         //Instantiate(Card);
 
@@ -122,5 +126,10 @@ public class CardManager : MonoBehaviour
 
         Image img = currentCharacter.GetComponent<Image>();
         FindObjectOfType<ChoiceManager>().GenerateChoices(currentCard.options);
+    }
+
+    public void UpdateDays()
+    {
+        dayText.GetComponent<TextMeshProUGUI>().text = "Days: " + cardsDrawn;
     }
 }
