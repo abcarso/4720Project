@@ -130,6 +130,6 @@ public class CardManager : MonoBehaviour
 
     public void UpdateDays()
     {
-        dayText.GetComponent<TextMeshProUGUI>().text = "Days: " + cardsDrawn;
+        dayText.GetComponent<TextMeshProUGUI>().text = "" + cardsDrawn;
     }
 }
