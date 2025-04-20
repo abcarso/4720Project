@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: T_Intro1
   m_EditorClassIdentifier: 
   eventName: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 7c62962134aed4e4b85c8fd54b81f3a1, type: 3}
   dialogText: I can't believe you're going to College today.
   options:
   - text: I am so excited!
@@ -29,4 +29,4 @@ MonoBehaviour:
   cardID: 25
   weight: 1
   isRepeatable: 0
-  encounterCount: 1
+  encounterCount: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: N_HomeworkFriend
   m_EditorClassIdentifier: 
   eventName: Homework Request
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 8bc8c544fb44e46ad868874e0bf9a20c, type: 3}
   dialogText: Will you help me with my homework?
   options:
   - text: Yeah! I totally know calc. (Lie)
@@ -34,4 +34,4 @@ MonoBehaviour:
   cardID: 11
   weight: 3
   isRepeatable: 1
-  encounterCount: 1
+  encounterCount: 0

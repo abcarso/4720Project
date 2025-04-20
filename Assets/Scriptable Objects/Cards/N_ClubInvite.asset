@@ -13,17 +13,19 @@ MonoBehaviour:
   m_Name: N_ClubInvite
   m_EditorClassIdentifier: 
   eventName: Club Invite
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 71ef81b8e9fba40c49b40e1b9c502e43, type: 3}
   dialogText: Hey Class, be sure to attend the engineering club meeting tonight!
   options:
   - text: LAAAAMEEEE!
     schoolEffect: -5
     sleepEffect: 10
     socialEffect: -10
+    nextCard: {fileID: 0}
   - text: For sure!
     schoolEffect: 5
     sleepEffect: -5
     socialEffect: 10
+    nextCard: {fileID: 0}
   cardID: 14
   weight: 1
   isRepeatable: 1
