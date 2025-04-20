@@ -20,19 +20,23 @@ MonoBehaviour:
     schoolEffect: 25
     sleepEffect: -25
     socialEffect: -25
+    nextCard: {fileID: 0}
   - text: I can't believe I failed. *Cry self to sleep*
     schoolEffect: -10
     sleepEffect: 30
     socialEffect: -10
+    nextCard: {fileID: 0}
   - text: My friends will cheer me up.
     schoolEffect: -10
     sleepEffect: -5
     socialEffect: 15
+    nextCard: {fileID: 0}
   - text: No point in letting it get me down. Time to party!
     schoolEffect: -15
     sleepEffect: -15
     socialEffect: 30
+    nextCard: {fileID: 0}
   cardID: 15
   weight: 1
-  isRepeatable: 0
+  isRepeatable: 1
   encounterCount: 0

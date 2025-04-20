@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
   m_Name: N_UnexpectedCompliment
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   eventName: Compliment Surprise
   image: {fileID: 0}
   dialogText: Someone complimented your outfit today!
@@ -19,16 +19,19 @@ MonoBehaviour:
   - text: Smile and say thanks!
     schoolEffect: 0
     sleepEffect: 5
-    socialEffect: 15
+    socialEffect: 20
+    nextCard: {fileID: 0}
   - text: Shrug it off, you're not used to it.
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: 5
+    nextCard: {fileID: 0}
   - text: Get awkward and hide.
     schoolEffect: -5
     sleepEffect: 0
-    socialEffect: -10
-  cardID: 24
+    socialEffect: -20
+    nextCard: {fileID: 0}
+  cardID: 20
   weight: 1
   isRepeatable: 0
   encounterCount: 0

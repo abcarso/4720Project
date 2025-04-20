@@ -17,14 +17,16 @@ MonoBehaviour:
   dialogText: Do you want to come study with us?
   options:
   - text: Sounds fun
-    schoolEffect: 3
-    sleepEffect: -2
-    socialEffect: 3
-  - text: I study better without distractions
     schoolEffect: 5
-    sleepEffect: -1
-    socialEffect: -1
+    sleepEffect: -5
+    socialEffect: 5
+    nextCard: {fileID: 0}
+  - text: I study better without distractions
+    schoolEffect: 10
+    sleepEffect: -10
+    socialEffect: -10
+    nextCard: {fileID: 0}
   cardID: 3
   weight: 2
   isRepeatable: 1
-  encounterCount: 0
+  encounterCount: 9

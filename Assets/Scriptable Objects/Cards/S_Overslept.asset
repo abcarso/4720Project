@@ -11,24 +11,27 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
   m_Name: S_Overslept
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   eventName: Slept In
   image: {fileID: 0}
-  dialogText: Your alarm didn’t go off and you’re late for class!
+  dialogText: "Your alarm didn\u2019t go off and you\u2019re late for class!"
   options:
   - text: Skip the class, catch up later.
-    schoolEffect: -10
-    sleepEffect: 10
-    socialEffect: 0
+    schoolEffect: -30
+    sleepEffect: 20
+    socialEffect: -20
+    nextCard: {fileID: 0}
   - text: Rush to class in panic mode.
-    schoolEffect: 5
-    sleepEffect: -15
-    socialEffect: -5
+    schoolEffect: 15
+    sleepEffect: -20
+    socialEffect: -10
+    nextCard: {fileID: 0}
   - text: Message a friend for notes.
-    schoolEffect: 0
-    sleepEffect: 5
+    schoolEffect: 5
+    sleepEffect: 0
     socialEffect: 10
+    nextCard: {fileID: 0}
   cardID: 22
-  weight: 1
-  isRepeatable: 0
+  weight: 3
+  isRepeatable: 1
   encounterCount: 0

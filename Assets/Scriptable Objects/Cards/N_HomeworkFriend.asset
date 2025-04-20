@@ -20,15 +20,18 @@ MonoBehaviour:
     schoolEffect: -5
     sleepEffect: 0
     socialEffect: -5
+    nextCard: {fileID: 0}
   - text: I can't help you.
     schoolEffect: 0
     sleepEffect: 0
     socialEffect: -15
+    nextCard: {fileID: 0}
   - text: I've got no idea either. Want to go to tutoring together?
     schoolEffect: 10
     sleepEffect: -5
     socialEffect: 10
+    nextCard: {fileID: 0}
   cardID: 11
-  weight: 1
-  isRepeatable: 0
-  encounterCount: 0
+  weight: 3
+  isRepeatable: 1
+  encounterCount: 1

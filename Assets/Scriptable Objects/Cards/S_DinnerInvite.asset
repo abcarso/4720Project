@@ -20,11 +20,13 @@ MonoBehaviour:
     schoolEffect: 0
     sleepEffect: -10
     socialEffect: 10
+    nextCard: {fileID: 0}
   - text: Why is this big sheep talking to me? (hallucinate)
     schoolEffect: 0
-    sleepEffect: 10
-    socialEffect: -15
+    sleepEffect: 20
+    socialEffect: -30
+    nextCard: {fileID: 0}
   cardID: 16
   weight: 1
-  isRepeatable: 0
+  isRepeatable: 1
   encounterCount: 0

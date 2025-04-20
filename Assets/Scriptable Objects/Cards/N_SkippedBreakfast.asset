@@ -11,24 +11,27 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4076c65246ff924f932386b9f06c46d, type: 3}
   m_Name: N_SkippedBreakfast
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   eventName: Skipped Breakfast
   image: {fileID: 0}
-  dialogText: You rushed out and forgot to eat. How do you cope?
+  dialogText: I forgot to eat breakfast!
   options:
   - text: Power through. Who needs food?
     schoolEffect: -5
     sleepEffect: -5
     socialEffect: 0
+    nextCard: {fileID: 0}
   - text: Grab a snack at break time.
     schoolEffect: 0
     sleepEffect: 5
     socialEffect: 5
+    nextCard: {fileID: 0}
   - text: Complain about it all morning.
     schoolEffect: -5
     sleepEffect: 0
     socialEffect: -5
-  cardID: 21
-  weight: 1
-  isRepeatable: 0
+    nextCard: {fileID: 0}
+  cardID: 23
+  weight: 2
+  isRepeatable: 1
   encounterCount: 0

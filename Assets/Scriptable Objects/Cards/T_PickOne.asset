@@ -36,7 +36,7 @@ MonoBehaviour:
     sleepEffect: -10
     socialEffect: -10
     nextCard: {fileID: 11400000, guid: 7f33915a15f3c1a4f99a9bae0f1aa491, type: 2}
-  cardID: 
+  cardID: 29
   weight: 0
   isRepeatable: 0
-  encounterCount: 0
+  encounterCount: 1
